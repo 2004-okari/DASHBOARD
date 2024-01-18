@@ -54,3 +54,44 @@
     }
   }
 }
+
+.topbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  .topbar-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .topbar-search-input {
+      box-sizing: border-box;
+      margin: 0 0px;
+      height: 30px;
+      padding: 0 8px;
+      width: 300px;
+      outline: none !important;
+      background-color: aqua;
+      border: none;
+      &:focus {
+        border: 1px solid #ccc;
+      }
+    }
+    .topbar-icons-1 {
+      fill: #ccc;
+      margin: 0 6px;
+      font-size: 18px;
+    }
+  }
+
+  .topbar-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .topbar-icons {
+      margin: 0 6px;
+      font-size: 18px;
+    }
+  }
+}
